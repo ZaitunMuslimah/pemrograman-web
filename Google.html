@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Google : Zaitun Muslimah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <img src="Images/google.png" alt="">
+        <div class="searchBox">
+            <input type="text" name="" class="query" value="">
+            <div class="icon">
+                <div><img src="Images/search.png" alt=""></div>
+                <div><img src="Images/voicesearch.png" alt=""></div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="searchBtn">Google search</button>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        let query = document.querySelector(".query");
+        let searchBtn = document.querySelector(".searchBtn");
+
+        searchBtn.onclick = function(){
+            let url = "https://www.google.co.id/search?q="+query.value;
+            window.open(url,'_self');
+        }
+    </script>
+
+</body>
+</html>
